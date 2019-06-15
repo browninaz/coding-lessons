@@ -1,0 +1,322 @@
+<!DOCtype html>
+<html lang="en">
+
+<head>
+    <title>Recipe Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*The html selector will set the rules for the root of the doucment*/
+
+        html {
+            font-family: "Arial", "Helvetica", "sans-serif";
+            ;
+            font-size: 18px;
+            color: rgb(49, 49, 49);
+        }
+
+        /*Header styles------------------------------------------------*/
+
+        .header-logo {
+            text-align: left;
+        }
+
+        /*Main navigation styles*/
+
+        .main-menu {
+            text-align: center;
+            font-family: "Arial", "Helvetica", "sans-serif";
+            font-size: 18px;
+            margin-right: 20px;
+            margin-top: 0px;
+            background: green;
+        }
+
+        .main-menu a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+        /*End header styles--------------------------------------------*/
+
+        /*Main body styles---------------------------------------------*/
+
+        ul {
+            list-style-type: square;
+        }
+
+        section {
+            margin-left: 40px;
+        }
+
+        #index-header {
+            margin-left: 40px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 400
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 400
+        }
+
+        /*Thanks to https://css-tricks.com/examples/hrs/ for most of the following styles*/
+
+        hr.section-break {
+            height: 12px;
+            border: 0;
+            box-shadow: inset 0 12px 12px -12px rgba(70, 136, 95, 0.5);
+            width: 350px;
+        }
+
+        /*Image styles*/
+
+        .sectionimg {
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        /*This image style uses combined descendant selectors*/
+
+        #main img {
+            border: 2px solid green;
+        }
+
+        /*End main body styles------------------------------------------------*/
+
+        /*Footer styles-------------------------------------------------------*/
+
+        .footer-logo {
+            text-align: center;
+        }
+
+        #citations a {
+            text-decoration: none;
+            color: red;
+        }
+
+        /*End footer styles----------------------------------------------------*/
+    </style>
+</head>
+
+<body>
+    <div id="top"></div>
+    <!--This will be the header that is rendered at the top of every page-->
+    <header id="global-header">
+        <div class="header-logo">
+            <img src="https://cdn.pixabay.com/photo/2016/09/18/03/40/logo-1677364_1280.png" alt="Blog Logo" width="250"
+                title="My blog logo">
+        </div>
+        <div class="main-menu">
+            <nav>
+                <a href="#starter">Starters</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#main">Main Course</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#dessert">Dessert</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#thanks">Image and Content Credit</a>
+            </nav>
+        </div>
+        <br>
+        <hr class="header-line">
+    </header>
+    <!--Start the main body of the page-->
+    <main>
+        <section>
+            <header id="index-header">
+                <h1>Southwestern Dinner Idea</h1>
+                <p id="article-intro">Looking for delicous Southwestern dinner inspiration? You came to the right place.
+                    Create a meal masterpiece
+                    tonight with this list of recipes.</p>
+            </header>
+            <br>
+            <!--Recipe 1-->
+
+            <article id="starter" class="salsa">
+                <header id="section-one">
+                    <h2>First up, Fresh Chips and Salsa</h2>
+                    <img class="sectionimg"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/df/Flickr_-_cyclonebill_-_Chips_og_salsa.jpg"
+                        alt="Picture of a bowl of chips, a bowl of hot, and a bowl of mild salsa" width="350"
+                        title="Fresh chips and salsa">
+                </header>
+                <div id="section-one-content" class="content">
+                    <p>I agree 100% with the following quote:</p>
+                    <blockquote>"My favorite food in the world is Mexican food. I'm not a dessert person. I'm
+                        <br> more of a crunchy, salty girl. I could live on chips and salsa. I would take a
+                        <br> Mexican meal over some fancy French cuisine anytime."
+                        <cite>-Michelle Pfeiffer</cite>
+                        <br>
+                    </blockquote>
+                    <p>
+                        I could eat mexican food for every meal! With that being said, get the chips ready for this
+                        <br> quick and easy No-Cook Restaurant-Style Salsa recipe! In less than five minutes, you
+                        <br> will have a delicious, healthy appetizer or snack everyone will love. It's bright, fresh
+                        and
+                        <br> perfect for parties!</p>
+                    <h4>List of ingredients:</h4>
+                    <ul>
+                        <li>1/4 small onion</li>
+                        <li>2 small cloves peeled garlic</li>
+                        <li>1/2 jalapeño, seeded and membranes removed or leave in for spicy</li>
+                        <li>14.5 ounce can diced tomatoes (not with basil) I use Tuttorosso</li>
+                        <li>A handful of cilantro</li>
+                        <li>Juice of one lime</li>
+                        <li>1/4 tsp kosher salt</li>
+                    </ul>
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Place everything in the chopper of the food processor.</li>
+                        <li>Pulse a few times.</li>
+                        <li>Don't over process.</li>
+                    </ol>
+                </div>
+            </article>
+            <br>
+            <hr class="section-break">
+            <!--Recipe 2-->
+            <article id="main" class="chili">
+                <header id="section-two">
+                    <h2>And next, a delicious bowl of chili...</h2>
+                    <img class="sectionimg" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Bowl_of_chili.jpg"
+                        alt="Picture of a delicious looking bowl of chili with a couple of tortilla chips in it"
+                        width="350" title="A delicious bowl of chili">
+                </header>
+                <div id="section-two-content" class="content">
+                    <p>This man hit the nail right on the head.</p>
+                    <blockquote>"Next to jazz music, there is nothing that lifts the spirit and strengthens the soul
+                        <br> more than a good bowl of chili."
+                        <cite>-Harry James</cite>
+                    </blockquote>
+                    <P>Ready to lift your spirits? Look no further for the ultimate, easy chili recipe. With just a
+                        <br> push of a button, your weekday dinner is taken care of as the chili cooks away in the
+                        <br> slow-cooker. Add chili to your next barbeque to top grilled sausages for an upgraded
+                        <br> version of chili dogs. You can easily substitute ground turkey instead of beef for a
+                        lighter
+                        <br> option and the rest of the ingredients should already be stocked away in your pantry. To
+                        <br> top the hot, spicy chili, add shredded Cheddar cheese and corn chips for extra flavor and
+                        <br> texture.</p>
+                    <h4>List of ingredients:</h4>
+                    <ul>
+                        <li>1 1⁄2 lbs ground beef</li>
+                        <li>1 large chopped onion (yellow or white)</li>
+                        <li>4 minced garlic cloves</li>
+                        <li>2 tablespoons chili powder</li>
+                        <li>1⁄2 teaspoon salt</li>
+                        <li>2 teaspoons ground cumin</li>
+                        <li>1 teaspoon dried oregano</li>
+                        <li>1⁄4 teaspoon cayenne</li>
+                        <li>2 (15 1/2 ounce) cans kidney beans</li>
+                        <li>1 (28 ounce) can diced tomatoes</li>
+                        <li>1 (6 ounce) can tomato paste</li>
+                        <li>1⁄2 teaspoon Tabasco sauce</li>
+                        <li>1 (4 ounce) can of chopped jalapenos</li>
+                        <li>1 teaspoon sugar</li>
+                        <li>1 cup dark beer</li>
+                        <li>1 cup shredded cheddar cheese</li>
+                        <li>1⁄2 cup sour cream</li>
+                    </ul>
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Cook ground beef in large frying pan.</li>
+                        <li>While cooking, stir and chop beef with spatula to crumble.</li>
+                        <li>Continue cooking for about 7 minutes or until the meat is brown and cooked
+                            <br> through.</li>
+                        <li>Add the onion, garlic, chili powder, salt, cumin, oregano, cayenne, and tabasco.</li>
+                        <li>Cook while stirring, until onion is translucent, about 5 minutes.</li>
+                        <li>Transfer to large pot. Add the Kidney beans (juice and all), canned tomatoes (juice
+                            <br> and all), the tomato paste, jalapenos (yep, juice and all), sugar, and beer.</li>
+                        <li>Stir well and bring to a boil.</li>
+                        <li>Lower the heat to medium-low and simmer, uncovered, for 30 minutes, stirring
+                            <br> occasionally.</li>
+                        <li>Top individual bowls of chili with a dollop of sour cream and a generous sprinkle of
+                            <br> cheese.</li>
+                        <li>Devour. Yum!</li>
+                    </ol>
+                </div>
+            </article>
+
+            <br>
+            <!--Recipe 3-->
+            <hr class="section-break">
+            <article id="dessert" class="pudding">
+                <header id="section-three">
+                    <h2>Finally, to top it all off, dessert...</h2>
+                    <img class="sectionimg" src="https://images.media-allrecipes.com/userphotos/720x405/3381043.jpg"
+                        alt="Picture of a bowl of cool rice pudding with cinnamon and raisens" width="350"
+                        title="Creamy rice pudding">
+                </header>
+                <div id="section-three-content" class="content">
+                    <p>These quotations
+                        <em>are</em> proving to be valuable. They make for good content.</p>
+                    <blockquote>"Quotations can be valuable, like raisins in the rice pudding, for adding iron as
+                        <br> well as eye appeal."
+                        <cite>-Peg Bracken</cite>
+                    </blockquote>
+                    <P>This is a great recipe for Rice Pudding. It's the best I've ever tasted and it gets rave
+                        <br> reviews from everyone I serve it to. Sprinkle with nutmeg or cinnamon, if desired. For
+                        <br> creamier pudding, use short or medium grain rice.</P>
+                    <h4>List of ingredients:</h4>
+                    <ul>
+                        <li>3/4 cup uncooked white rice</li>
+                        <li>2 cups milk, divided</li>
+                        <li>1/3 cup white sugar</li>
+                        <li>1/4 teaspoon salt</li>
+                        <li>1 egg, beaten</li>
+                        <li>2/3 cup golden raisins</li>
+                        <li>1 tablespoon butter</li>
+                        <li>1/2 teaspoon vanilla extract</li>
+                    </ul>
+                    <h4>Directions:</h4>
+                    <ol>
+                        <li>Bring 1 1/2 cups water to a boil in a saucepan; stir rice into boiling water. Reduce
+                            <br> heat to low, cover, and simmer for 20 minutes.</li>
+                        <li>In a clean saucepan, combine 1 1/2 cups cooked rice, 1 1/2 cups milk, sugar and
+                            <br> salt. Cook over medium heat until thick and creamy, 15 to 20 minutes. Stir in
+                            <br> remaining 1/2 cup milk, beaten egg, and raisins; cook 2 minutes more, stirring
+                            <br> constantly. Remove from heat and stir in butter and vanilla.</li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+        <br>
+        <hr class="section-break">
+    </main>
+    <!--Start the footer.-->
+    <footer>
+        <h2 id="thanks">Special Thanks for the images and content used in this article -</h2>
+        <p id="citations">
+            <a href="https://www.skinnytaste.com/easy-no-cook-salsa-recipe/" target="_blank">
+                <cite>skinnytaste.com</cite>
+            </a>
+            <br>
+            <a href="http://www.myrecipes.com/recipe/easy-chili" target="_blank">
+                <cite>myrecipes.com</cite>
+            </a>
+            <br>
+            <a href="https://www.allrecipes.com/recipe/24059/creamy-rice-pudding/" target="_blank">
+                <cite>allrecipes.com</cite>
+            </a>
+            <br>
+            <a href="https://commons.wikimedia.org/wiki/Main_Page" target="_blank">
+                <cite>Wikimedia.com</cite>
+            </a>
+            <br>
+            <a href="https://pixabay.com/" target="_blank">
+                <cite>Pixabay.com</cite>
+            </a>
+            <br>
+            <br>
+            <a href="#top">Back to top of page</a>
+        </p>
+        <div class="footer-logo">
+            <img src="https://cdn.pixabay.com/photo/2016/09/18/03/40/logo-1677364_1280.png" alt="Blog Logo" width="125"
+                title="My blog logo">
+        </div>
+    </footer>
+
+</body>
+
+</html>
