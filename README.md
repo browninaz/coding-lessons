@@ -1,1 +1,1 @@
-# Textbook assingments for learning CSS and HTML
+# Textbook assigngments for learning CSS and HTML
