@@ -1,1 +1,1 @@
-# Textbook assignments for learning CSS, HTML, and version control.
+# Textbook assignments for learning CSS, HTML, PHP and version control.
